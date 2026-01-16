@@ -1,52 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raj — [Your Role/Title] • Hyderabad</title>
+  <meta name="description" content="Results-driven [your specialty] based in Hyderabad. Building scalable solutions / leading teams / driving impact in [your domain].">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
 
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Raj's Profile">
-    <meta name="author" content="Rajasekhar Kandalam">
-    <title>Raj Kandalam</title>
-    
-    <!-- Bootstrap core CSS -->
-<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
-  </head>
-  <body class="d-flex flex-column h-100">
-    <!-- Begin page content -->
-<main role="main" class="flex-shrink-0">
-  <div class="container">
-    <h1 class="mt-5">Rajasekhar Kandalam</h1><br>
-   <h3>Sr. Delivery Project Manager</h3>
-    <h4>Industry Solutions, Microsoft India</h4><br><br>
-    <p>Contact Details:<br>
-      Email: rajkandalam@gmail.com</p>
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold tracking-tight">Raj</a>
+      
+      <div class="flex items-center gap-8">
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+          <a href="#work" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Work</a>
+          <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition">About</a>
+          <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a>
+        </div>
+        <!-- Dark mode toggle (simple JS or use prefers-color-scheme) -->
+        <button id="theme-toggle" class="text-xl">🌙</button>
+      </div>
     </div>
-</main>
+  </nav>
 
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">&copy;rajkandalam.com 2019 - 2022</span>
-  </div>
-</footer>
+  <!-- Hero Section – Strongest part -->
+  <section class="min-h-screen flex items-center pt-20 pb-16 md:pt-0">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-blue-600 dark:text-blue-400 font-medium tracking-wide uppercase text-sm mb-3">Hyderabad, India</p>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+          Raj<br/><span class="text-neutral-500 dark:text-neutral-400">[Your Last Name or Tagline]</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 mb-10 max-w-xl">
+          [Your one powerful sentence — e.g. "Principal Engineer crafting scalable systems that power 10M+ users" or "Product & Engineering Leader turning vision into 8-figure impact" or "Data & AI specialist solving real-world problems at scale."]
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 px-8 py-4 rounded-lg font-medium hover:bg-neutral-800 dark:hover:bg-neutral-100 transition">
+            Let's talk →
+          </a>
+          <a href="/resume.pdf" target="_blank" class="border border-neutral-300 dark:border-neutral-700 px-8 py-4 rounded-lg font-medium hover:bg-neutral-100 dark:hover:bg-neutral-900 transition">
+            View Résumé
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right side: Professional photo or subtle animated element -->
+      <div class="hidden md:block">
+        <div class="relative">
+          <!-- Replace with your professional headshot – ideally high-res, natural lighting, slight smile -->
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Raj - Professional Portrait" 
+               class="rounded-2xl shadow-2xl object-cover aspect-square w-full max-w-md mx-auto grayscale hover:grayscale-0 transition duration-500">
+          <!-- Optional subtle overlay shape -->
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-500/10 dark:bg-blue-600/20 rounded-full blur-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Value / Expertise Cards -->
+  <section id="work" class="py-20 bg-neutral-50 dark:bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">What I Deliver</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 bg-white dark:bg-neutral-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold mb-4">[Expertise 1]</h3>
+          <p class="text-neutral-600 dark:text-neutral-300">Scalable backend systems • Microservices • Cloud architecture (AWS/GCP/Azure)</p>
+        </div>
+        <div class="p-8 bg-white dark:bg-neutral-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold mb-4">[Expertise 2]</h3>
+          <p class="text-neutral-600 dark:text-neutral-300">Team leadership • Product strategy • Engineering velocity & developer experience</p>
+        </div>
+        <div class="p-8 bg-white dark:bg-neutral-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-2xl font-semibold mb-4">[Expertise 3]</h3>
+          <p class="text-neutral-600 dark:text-neutral-300">Data pipelines • ML deployment • Business-aligned AI solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work / Projects (grid or carousel) -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Selected Work</h2>
+      <!-- Add 3–4 project cards with image, title, short desc, tech stack tags -->
+      <!-- Example structure per card -->
+      <!-- <div class="group relative overflow-hidden rounded-2xl"> ... </div> -->
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="py-24 bg-neutral-900 text-white dark:bg-black">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-8">Ready to build something great?</h2>
+      <p class="text-xl md:text-2xl mb-10 text-neutral-300">I'm currently [available / selective / open to interesting opportunities] in [your focus areas].</p>
+      <a href="mailto:hello@yourdomain.com" class="inline-block bg-white text-neutral-900 px-10 py-5 rounded-lg text-lg font-medium hover:bg-neutral-200 transition">
+        Get in touch →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 text-center text-neutral-500 dark:text-neutral-400 text-sm">
+    <p>© 2026 Raj • Hyderabad, Telangana • <a href="https://linkedin.com/in/yourprofile" class="hover:text-blue-500">LinkedIn</a> • <a href="https://github.com/yourhandle" class="hover:text-blue-500">GitHub</a></p>
+  </footer>
+
+  <script>
+    // Simple dark mode toggle
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
 </body>
 </html>
